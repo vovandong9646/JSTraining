@@ -14,7 +14,7 @@ const ProfileAccount = () => {
   return (
     <React.Fragment>
       <Box sx={{ display: 'flex', alignItems: 'center', textAlign: 'center' }}>
-        <Tooltip title='Account settings'>
+        <Tooltip title='Account settings' arrow>
           <IconButton
             onClick={handleClick}
             size='small'

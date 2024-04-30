@@ -1,6 +1,6 @@
 import { Check } from '@mui/icons-material'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
-import { Button, Divider, ListItemIcon, ListItemText, Menu, MenuItem } from '@mui/material'
+import { Box, Button, Divider, ListItemIcon, ListItemText, Menu, MenuItem } from '@mui/material'
 import React from 'react'
 
 const Recents = () => {
@@ -13,8 +13,9 @@ const Recents = () => {
     setAnchorEl(null)
   }
   return (
-    <div>
+    <Box>
       <Button
+        sx={{ color: 'white' }}
         id='basic-button-recents'
         aria-controls={open ? 'basic-menu-recents' : undefined}
         aria-haspopup='true'
@@ -60,7 +61,7 @@ const Recents = () => {
           <ListItemText>Custom spacing...</ListItemText>
         </MenuItem>
       </Menu>
-    </div>
+    </Box>
   )
 }
 

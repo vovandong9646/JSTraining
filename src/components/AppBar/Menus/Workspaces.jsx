@@ -1,6 +1,6 @@
 import { Cloud, ContentCopy, ContentCut, ContentPaste } from '@mui/icons-material'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
-import { Button, Divider, ListItemIcon, ListItemText, Menu, MenuItem, Typography } from '@mui/material'
+import { Box, Button, Divider, ListItemIcon, ListItemText, Menu, MenuItem, Typography } from '@mui/material'
 import React from 'react'
 
 const Workspaces = () => {
@@ -13,8 +13,9 @@ const Workspaces = () => {
     setAnchorEl(null)
   }
   return (
-    <div>
+    <Box>
       <Button
+        sx={{ color: 'white' }}
         id='basic-button-workspace'
         aria-controls={open ? 'basic-menu-workspace' : undefined}
         aria-haspopup='true'
@@ -68,7 +69,7 @@ const Workspaces = () => {
           <ListItemText>Web Clipboard</ListItemText>
         </MenuItem>
       </Menu>
-    </div>
+    </Box>
   )
 }
 

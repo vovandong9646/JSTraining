@@ -30,8 +30,23 @@ function SelectMode() {
 
   return (
     <FormControl size='small'>
-      <InputLabel id='select-mode-id'>Theme</InputLabel>
-      <Select labelId='select-mode-id' id='select-small' value={mode} label='Mode' onChange={handleChange}>
+      <InputLabel id='select-mode-id' sx={{ color: 'white', '&.Mui-focused': { color: 'white' } }}>
+        Theme
+      </InputLabel>
+      <Select
+        sx={{
+          color: 'white',
+          '.MuiOutlinedInput-notchedOutline': { borderColor: 'white' },
+          '&:hover .MuiOutlinedInput-notchedOutline': { borderColor: 'white' },
+          '&.Mui-focused .MuiOutlinedInput-notchedOutline': { borderColor: 'white' },
+          '.MuiSvgIcon-root': { color: 'white' }
+        }}
+        labelId='select-mode-id'
+        id='select-small'
+        value={mode}
+        label='Mode'
+        onChange={handleChange}
+      >
         <MenuItem value='light'>
           <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
             <LightModeIcon />

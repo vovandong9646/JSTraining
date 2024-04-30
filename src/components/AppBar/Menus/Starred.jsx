@@ -1,6 +1,6 @@
 import { Cloud, ContentCopy, ContentCut, ContentPaste } from '@mui/icons-material'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
-import { Button, Divider, ListItemIcon, ListItemText, Menu, MenuItem, Typography } from '@mui/material'
+import { Box, Button, Divider, ListItemIcon, ListItemText, Menu, MenuItem, Typography } from '@mui/material'
 import React from 'react'
 
 const Starred = () => {
@@ -13,8 +13,9 @@ const Starred = () => {
     setAnchorEl(null)
   }
   return (
-    <div>
+    <Box>
       <Button
+        sx={{ color: 'white' }}
         id='basic-button-starred'
         aria-controls={open ? 'basic-menu-starred' : undefined}
         aria-haspopup='true'
@@ -68,7 +69,7 @@ const Starred = () => {
           <ListItemText>Web Clipboard</ListItemText>
         </MenuItem>
       </Menu>
-    </div>
+    </Box>
   )
 }
 
